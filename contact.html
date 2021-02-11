@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> PV - Contact</title>
+        <link rel="stylesheet" href="style.css" >
+    </head>
+
+    <body>
+        <div id = "particles-js"></div>
+        
+        <script type = "text/javascript" src = "particles.js"></script>
+        <script type = "text/javascript" src = "app.js"></script>
+
+        <div class="navbar">
+            <a href = "index.html"><img src = "Logo.png" class = "logo" onmouseover="this.src='Shaded-Logo.png'" onmouseout="this.src='Logo.png'"></a>
+            <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">PORTFOLIO</button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="index.html">VIDEO GAMES</a>
+                        <a href="index.html">WEBSITES AND APPS</a>
+                        <a href="index.html">COMPUTER SCIENCE</a>
+                    </div>
+            </div>
+            <a href = "about.html">ABOUT</a>
+            <a href = "contact.html">CONTACT</a>
+        </div>
+
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+
+            window.onclick = function(e) {
+                if (!e.target.matches('.dropbtn')) {
+                    var myDropdown = document.getElementById("myDropdown");
+                    if (myDropdown.classList.contains('show')) {
+                        myDropdown.classList.remove('show');
+                    }
+                }
+            }
+        </script>
+        
+        <div class = "box">
+            <h2>Leave me a message</h2>      
+        </div>
+        
+        <form class = "form" action = "contactform.php" method = "post">
+                
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    
+                    <label for = "email">Your Email</label>
+                    <input type="text" id="emailid" name="email" placeholder="Your email..">
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="USA">USA</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Canada">Canada</option>
+                        <option value = "Other">Other (Please List)</option>
+                      
+                    </select>
+                    
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                    <button id = "submit" name = "submit">SEND EMAIL</button>
+                
+        </form>
+
+        <div class="icon-bar">
+            <a href="Phillip%20Vanderlaat%20Resume.pdf"><img src="Resume.png"></a>
+        </div>
+    </body>
+</html>

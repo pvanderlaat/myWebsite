@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> PV - Home</title>
+        <link rel="stylesheet" href="style.css" >
+    </head>
+
+    <body>
+        <div id = "particles-js"></div>
+        
+        <script type = "text/javascript" src = "particles.js"></script>
+        <script type = "text/javascript" src = "app.js"></script>
+
+        <div class="navbar">
+            <a href = "index.html"><img src = "Logo.png" class = "logo" onmouseover="this.src='Shaded-Logo.png'" onmouseout="this.src='Logo.png'"></a>
+            <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">PORTFOLIO</button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="index.html">VIDEO GAMES</a>
+                        <a href="index.html">WEBSITES AND APPS</a>
+                        <a href="index.html">COMPUTER SCIENCE</a>
+                    </div>
+            </div>
+            <a href = "about.html">ABOUT</a>
+            <a href = "contact.html">CONTACT</a>
+        </div>
+
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+
+            window.onclick = function(e) {
+                if (!e.target.matches('.dropbtn')) {
+                    var myDropdown = document.getElementById("myDropdown");
+                    if (myDropdown.classList.contains('show')) {
+                        myDropdown.classList.remove('show');
+                    }
+                }
+            }
+        </script>
+
+        <div class="wavy">
+    <span style="--i:1;"><Text>P</Text></span>
+    <span style="--i:4;"></span>
+    <span style="--i:2;">H</span>
+    <span style="--i:4;"></span>
+    <span style="--i:3;">I</span>
+    <span style="--i:4;"></span>
+    <span style="--i:4;">L</span>
+    <span style="--i:4;"></span>
+    <span style="--i:5;">L</span>
+    <span style="--i:4;"></span>
+    <span style="--i:6;">I</span>
+    <span style="--i:4;"></span>
+    <span style="--i:7;">P</span>
+    <span style="--i:4;"></span>
+    <span style="--i:5;"></span>
+    <span style="--i:6;"></span>
+    <span style="--i:7;"></span>
+    <span style="--i:7;"></span>
+    <span style="--i:7;"></span>
+    <span style="--i:7;"></span>
+    <span style="--i:8;"><Text>V</Text></span>
+    <span style="--i:4;"></span>
+    <span style="--i:9;">A</span>
+    <span style="--i:4;"></span>
+    <span style="--i:10;">n</span>
+    <span style="--i:4;"></span>
+    <span style="--i:11;">d</span>
+    <span style="--i:4;"></span>
+    <span style="--i:12;">e</span>
+    <span style="--i:4;"></span>
+    <span style="--i:13;">r</span>
+    <span style="--i:4;"></span>
+    <span style="--i:14;">l</span>
+    <span style="--i:4;"></span>
+    <span style="--i:15;">a</span>
+    <span style="--i:4;"></span>
+    <span style="--i:16;">a</span>
+    <span style="--i:4;"></span>
+    <span style="--i:17;">t</span>
+        </div>
+
+        <div class="mainPhoto">
+            <img src="headshot.jpeg">
+        </div>
+
+
+        <div class="icon-bar">
+            <a href="Phillip%20Vanderlaat%20Resume.pdf"><img src="Resume.png"></a>
+        </div>
+
+    </body>
+</html>

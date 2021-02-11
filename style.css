@@ -1,0 +1,307 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/* holder for the main photo */
+.mainPhoto {
+    margin-top: 24%;
+    margin-bottom: 10%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+/*
+styling for particles.js which gets its functionality from app.js
+*/
+#particles-js{
+    position: fixed;
+    z-index: -1;
+    width:100%;
+    height:100%;
+    background: black;
+    background-size:cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+
+/* for are the tabs at the top */
+.navbar {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    background-color: none;
+    font-family: 'Abel', sans-serif;
+  }
+
+/* Styling and placement for nav bar objects that are a link */
+.navbar a {
+    float:left;
+    font-size: 30px;
+    color: #1b73c1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Holder for nav bar object that is a dropdown */
+  .dropdown {
+    float:left;
+    overflow: hidden;
+  }
+
+
+  /* styling for dropdown object */
+  .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 30px;  
+    border: none;
+    outline: none;
+    color: #1b73c1;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+    
+  
+  
+  /* Hover styling for dropdown object */
+  .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    color: white;  
+}
+  
+    /* Placement for dropdown object's dropdown holder */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: none;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+/* styling for dropdown sub-object */
+  .dropdown-content a {
+    float: none;
+    color: #1b73c1;
+    font-size: 20px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* hover effect for dropdown sub-objects */
+  .dropdown-content a:hover {
+    color: white;
+  }
+
+  /* needed to show the drop down holder...used in the script underneath the navbar div */
+  .show {
+    display: block;
+  }
+
+/* styling for resume link holder*/
+  .info{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left:0%;
+    margin-top: 8%;
+
+    -webkit-box-reflect: below 4px linear-gradient(
+        transparent, rgba(0,0,0,0.4));
+}
+
+/* for the resume link object */
+    .info a{
+        color: #1b73c1;
+        text-decoration: none;
+    }
+
+    /* for the resume link object */
+    .info a:hover{
+        color: white;
+    }
+
+
+    .logo{
+        margin-left:5px;
+        height:auto;
+        width:100px;
+    }
+
+
+/* this is all for the wavy text */
+.wavy {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    margin-top: 10%;
+
+    position: relative;
+    -webkit-box-reflect: below -12px linear-gradient(
+        transparent, rgba(0,0,0,0.4));
+}
+
+.wavy span {
+    display: inline-block;
+    color: white;
+    font-size: 65px;
+    text-transform: uppercase;
+    animation: animate 5s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+.wavy span text{
+    display: inline-block;
+    color:#1b73c1;
+    font-size: 65px;
+    text-transform: uppercase;
+    
+}
+
+.wavy span:hover {
+    
+    display: inline-block;
+    color: black;
+    font-size: 55px;
+    text-transform: uppercase;
+    animation: animate 5s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+.wavy span text:hover {
+    
+    display: inline-block;
+    color: black;
+    font-size: 55px;
+    text-transform: uppercase;
+    animation: animate 5s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate{
+    0% {
+        transform: translateY(0px);
+    }
+    20% {
+        transform: translateY(-20px);
+    }
+    40%, 100% {
+        transform: translateY(0px);
+    }
+}
+
+/* this is all for the wavy text */
+
+
+/* this is for the top right corner resume link */
+
+.icon-bar {
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); 
+}
+
+.icon-bar a {
+    padding: 14px;
+}
+
+.icon-bar a img{
+    width: 100px;
+}
+
+.icon-bar a:hover {
+  opacity: 0.7;
+}
+
+.facebook {
+    border-radius:50%;
+    background-color:transparent;
+    color: white;
+}
+/* this is for the top right corner resume link */
+
+input[type=text], select, textarea{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    width:100%;
+    padding:12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize:vertical;
+}
+
+
+/* for the form on contact page */
+#submit {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    background-color: #1b73c1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    color:#1b73c1;
+    background-color: white;
+}
+
+.form {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    margin-left:10%;
+    margin-right:10%;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 40px;
+}
+
+.box h2{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 7%;
+    font-size:30px;
+    letter-spacing: 3px;
+    font-weight:100;
+    color: #1b73c1;
+
+    -webkit-box-reflect: below -5px linear-gradient(
+        transparent, rgba(0,0,0,0.2));
+}
+
+/* for the form on contact page */
+
+
+.aboutBox {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.aboutBox img{
+    align-self: center;
+    width: 25%;
+    border-radius: 50%;
+}
