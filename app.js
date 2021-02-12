@@ -51,6 +51,7 @@ particlesJS('particles-js',
         }
       },
       "size": {
+        /* this is for the size of the particles */
         "value": 1,
         "random": true,
         "anim": {
@@ -69,6 +70,7 @@ particlesJS('particles-js',
       },
       "move": {
         "enable": true,
+        /*this adjustst the speed of the particles */
         "speed": 0.5,
         "direction": "none",
         "random": false,

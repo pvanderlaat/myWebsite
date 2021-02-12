@@ -47,6 +47,28 @@ styling for particles.js which gets its functionality from app.js
     padding: 14px 16px;
     text-decoration: none;
   }
+
+  .navbar a img{
+      width: 5px;
+    float:left;
+    text-align: center;
+    padding: 100px 90px;
+    background-image:url("Logo.png");
+    width:fit-content;
+  }
+
+  .navbar a img:hover{
+    float:left;
+    text-align: center;
+    padding: 100px 90px;
+    background-image:url("Shaded-logo.png");
+    width:fit-content;
+  }
+
+  .logo {
+      width: 50%;
+  }
+
   
   /* Holder for nav bar object that is a dropdown */
   .dropdown {
@@ -130,14 +152,6 @@ styling for particles.js which gets its functionality from app.js
     .info a:hover{
         color: white;
     }
-
-
-    .logo{
-        margin-left:5px;
-        height:auto;
-        width:100px;
-    }
-
 
 /* this is all for the wavy text */
 .wavy {
@@ -250,6 +264,10 @@ input[type=text], select, textarea{
 }
 
 
+
+
+
+
 /* for the form on contact page */
 #submit {
     font-family: 'Montserrat', sans-serif;
@@ -294,14 +312,132 @@ input[type=text], select, textarea{
 /* for the form on contact page */
 
 
-.aboutBox {
-    align-items: center;
-    justify-content: center;
+
+
+.parent1{
+    height: 100px;
     display: flex;
+    justify-content: center;
 }
 
-.aboutBox img{
-    align-self: center;
-    width: 25%;
+.child1{
+    width: 70%;
+    height: 150px;
+    border-radius: 25px;
+}
+
+.child1 h1{
+    font-size: 200%;
+    text-align: center;
+    color: white;
+}
+.child1 h2{
+    padding: 15px;
+    font-size: 150%;
+    text-align: center;
+    color: white;
+}
+
+.parent2{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 100px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.child2{
+    border-radius: 25px;
+    width: 400px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+    background-color: #1b73c1;
+    order: 1;
+    flex: shrink;
+}
+
+.child2 Text{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child2:hover{
+    font-size: 0px;
+}
+
+.child2:hover::after{
+    content: attr(data-hover);
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+
+
+.child3{
+    width: 200px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    order: 3;
+    flex: shrink;
+}
+
+.child3 img{
     border-radius: 50%;
+    height: 100%;
+}
+
+.child4{
+    border-radius: 25px;
+    width: 400px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 300;
+    background-color: #1b73c1;
+    color: white;
+    order: 4;
+    flex: shrink;
+}
+
+.child4 Text{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.child4:hover{
+    font-size: 0px;
+}
+
+.child4:hover::after{
+    content: attr(data-hover);
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+
+/* .child4 h1 {
+    font-size: 40px;
+    margin-top: 25%;
+    text-transform: uppercase;
+} */
+
+.child5{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
 }
