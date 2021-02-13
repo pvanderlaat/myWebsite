@@ -173,7 +173,7 @@ styling for particles.js which gets its functionality from app.js
     color: white;
     font-size: 65px;
     text-transform: uppercase;
-    animation: animate 5s ease-in-out infinite;
+    animation: animate 10s ease-in-out infinite;
     animation-delay: calc(0.1s * var(--i));
 }
 
@@ -225,10 +225,13 @@ styling for particles.js which gets its functionality from app.js
 .icon-bar {
     position: absolute;
     top: 70px;
-    right: 0px;
+    right: 15px;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); 
+
+    animation: animate 1s forwards infinite;
+    animation-delay: calc(0.1s * var());
 }
 
 .icon-bar a {
@@ -313,7 +316,7 @@ input[type=text], select, textarea{
 
 
 
-
+/* 
 .parent1{
     height: 100px;
     display: flex;
@@ -429,15 +432,114 @@ input[type=text], select, textarea{
     line-height: 24px;
     text-align: center;
 }
-
-/* .child4 h1 {
-    font-size: 40px;
-    margin-top: 25%;
-    text-transform: uppercase;
-} */
-
 .child5{
     width: 200px;
     height: 200px;
     background-color: yellow;
+} */
+
+.superParent{
+    height: 100%;
+    /* border: 20px solid rebeccapurple; */
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around 5px;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 60px;
+}
+
+.parent1{
+    width: 90%;
+    height: 20%;
+    opacity: 90%;
+}
+
+.child{
+    height: 100%;
+    opacity: unset;
+    /* background: red; */
+}
+
+.child h1{
+    text-align: center;
+    color: white;
+}
+
+
+.parent2{
+    width: 90%;
+    height: 50%;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    flex-shrink:inherit;
+    margin: 5%;
+    /* background:#1b73c1; */
+}
+
+.child h2{
+    text-align: center;
+    color:white;
+    padding: 2px;
+}
+
+.child2{
+    height: 100%;
+    width: 31%;
+    /* background: wheat;
+    border: 10px dotted black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: initial;
+    padding: 30px;
+    background-color: #1b73c1;
+}
+
+.child2 img{
+    border-radius: 50%;
+    width: 70%;
+    height: 80%;
+}
+
+.child2 Text{
+    text-transform: uppercase;
+    font-size: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.child2:hover{
+    font-size: 0px;
+}
+
+.child2:hover::after{
+    content: attr(data-hover);
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+
+.child3{
+    height: 100%;
+    width: 31%;
+    /* background: wheat;
+    border: 10px dotted black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: initial;
+}
+
+.child3 img{
+    border-radius: 50%;
+    width: 70%;
+    height: 80%;
 }
