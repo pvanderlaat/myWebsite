@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>NIAMH</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css" >
+</head>
+<body>
+    <div class="niamhBox">
+        <a href="niamh.html" class="linkedin"><i class="fa fa-heart logo2" aria-hidden="true"></i></a>
+    </div>
+    <div class="niamhPage2">
+        <div class="niamhBox">
+            <h1>4 REASONS WHY I LOVE YOU</h1>
+        </div>
+    </div>
+    <div class="niamhBox2">
+        <h5>(AMONG OTHERS OF COURSE)</h5>
+    </div>
+    <div class="niamhPage3">
+        <div class="dropdownN">
+            <button class="dropbtnN" onclick="myFunction4()">1</button>
+            <div class="dropdown-contentN" id="myDropdownN4">
+                <div class="prettyGirl">
+                    <img src="IMG_7317 copy.jpg">
+                    <div class="prettyText">
+                        <h1>You're breathtakingly beautiful</h1>
+                        <h3>(Especially in this dress)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+        <div class="dropdownN">
+            <button class="dropbtnN" onclick="myFunction()">2</button>
+            <div class="dropdown-contentN" id="myDropdownN">
+                <div class="prettyGirl">
+                    <img src="IMG_2663.jpg" class="prettyGirl">
+                    <div class="prettyText">
+                        <h2>You put up with my BS</h2>
+                        <h3>(Most of the time)</h3>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>             
+
+
+    </div>
+    <div class="niamhPage3">       
+
+        <div class="dropdownN">
+            <button class="dropbtnN" onclick="myFunction2()">3</button>
+            <div class="dropdown-contentN" id="myDropdownN2">
+                <div class="prettyGirl">
+                    <img src="IMG_2668.jpg" class="prettyGirl">
+                    <div class="prettyText">
+                        <h6>
+                            You're incredibly smart
+                        </h6>
+                        <h6>
+                            and hard working
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdownN">
+            <button class="dropbtnN" onclick="myFunction3()">3</button>
+            <div class="dropdown-contentN" id="myDropdownN3">
+                <div class="prettyGirl">
+                    <div class="prettyText">
+                        <h4>You're irresistibly huggable</h4>
+                    </div>
+                    <img src="IMG_7096.jpg" class="prettyGirl">
+                </div>
+                    
+            </div>
+        </div> 
+
+    </div>
+            <script>
+                function myFunction() {
+                    document.getElementById("myDropdownN").classList.toggle("showN");
+                }
+                function myFunction2() {
+                    document.getElementById("myDropdownN2").classList.toggle("showN");
+                }
+                function myFunction3() {
+                    document.getElementById("myDropdownN3").classList.toggle("showN");
+                }
+                function myFunction4() {
+                    document.getElementById("myDropdownN4").classList.toggle("showN");
+                }
+    
+    
+                window.onclick = function(e) {
+                    if (!e.target.matches('.dropbtnN')) {
+                        var myDropdown = document.getElementById("myDropdownN");
+                        if (myDropdown.classList.contains('showN')) {
+                            myDropdown.classList.remove('showN');
+                        }
+                        var myDropdown = document.getElementById("myDropdownN2");
+                        if (myDropdown.classList.contains('showN')) {
+                            myDropdown.classList.remove('showN');
+                        }
+                        var myDropdown = document.getElementById("myDropdownN3");
+                        if (myDropdown.classList.contains('showN')) {
+                            myDropdown.classList.remove('showN');
+                        }
+                        var myDropdown = document.getElementById("myDropdownN4");
+                        if (myDropdown.classList.contains('showN')) {
+                            myDropdown.classList.remove('showN');
+                        }
+                    }
+                }
+
+            </script>
+        </body>
+</html>

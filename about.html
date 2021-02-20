@@ -12,14 +12,16 @@
         <script type = "text/javascript" src = "app.js"></script>
 
         <div class="navbar">
-            <a href = "index.html"><img class = "logo"></a>            <div class="dropdown">
+            <a href = "index.html"><img class = "logo"></a> 
+            <a href = "portfolio.html">PORTFOLIO</a>           
+            <!-- <div class="dropdown">
                     <button class="dropbtn" onclick="myFunction()">PORTFOLIO</button>
                     <div class="dropdown-content" id="myDropdown">
                         <a href="index.html">VIDEO GAMES</a>
                         <a href="index.html">WEBSITES AND APPS</a>
                         <a href="index.html">COMPUTER SCIENCE</a>
                     </div>
-            </div>
+            </div> -->
             <a href = "about.html">ABOUT</a>
             <a href = "contact.html">CONTACT</a>
         </div>
@@ -52,43 +54,52 @@
 
             </div>
             
-            <div class="parent2">
+        <div class="parent2">
 
-                <div class="child2"
-                data-hover= "I am currently a UX/UI officer at the Software Engineering Club, which is helping me sharpen my design skills by using modern front-end tools, gain timely back-end knowledge such as database management, and learn how to automate process' such as programming social media bots. I am also a member of the Game Developers Association Club which is showing me how to lead and collaborate on large projects as well as develop my programming skills."
-                >
-                <Text>technical bio</Text>
+            <div class = "child2">
+                <button class="biobutton" onclick="myFunction2()">TECHNICAL BIO</button>
+                <div class="biobutton-content" id="bioDropdown">
+                    <Text>I am currently a UX/UI officer at the Software Engineering Club, which is helping me sharpen my design skills by using modern front-end tools, gain timely back-end knowledge such as database management, and learn how to automate process' such as programming social media bots. I am also a member of the Game Developers Association Club which is showing me how to lead and collaborate on large projects as well as develop my programming skills.</Text>
                 </div>
-
-                <div class="child3">
-                    <img src = "Headshot 2.jpeg" alt = "">
-                </div>
-    
-                <div class="child2"data-hover= "My other hobbies include playing ice hockey, working out and making digital art. After highschool, I spent two gap years as a semi-professional ice hockey player. I am grateful for all the hard fought lessons I learned and amazing people I met. Those years helped me become a great leader and communicator that knows how to be a part of a team. I'm currently a part of the UF ice hockey team and hope to lead them towards some championships!"
-                >
-                    <Text>personal bio</Text>
-                </div>
-
             </div>
-        </div>
 
-
-        <!-- <div class="parent2">
-            <div class="child2"
-                data-hover= "I am currently a UX/UI officer at the Software Engineering Club, which is helping me sharpen my design skills by using modern front-end tools, gain timely back-end knowledge such as database management, and learn how to automate process' such as programming social media bots. I am also a member of the Game Developers Association Club which is showing me how to lead and collaborate on large projects as well as develop my programming skills."
-                >
-                <Text>technical bio</Text>
-            </div>
             <div class="child3">
-                <img src = "Headshot 2.jpeg" alt = "" class = "box-img">
+                <img src="Headshot 2.jpeg">
             </div>
 
-            <div class="child4"
-                data-hover= "I love to play ice hockey, workout and make digital art. After highschool, I spent two gap years as a semi-professional ice hockey player. I am grateful for all the hard fought lessons I learned and amazing people I met. Those years helped me become a great leader and communicator that knows how to be a part of a team. I'm currently a part of the UF ice hockey team and hope to lead them towards some championships!"
-            >
-                <Text>personal bio</Text>
+            <div class = "child2">
+                <button class="biobutton2" onclick="myFunction3()">PERSONAL BIO</button>
+                <div class="biobutton2-content" id="bioDropdown2">
+                    <Text>My other hobbies include playing ice hockey, working out and making digital art. After high school, I spent two gap years as a semi-professional ice hockey player. I am grateful for the lessons I learned and amazing people I met. Those years helped me become a great leader and communicator that knows how to click with diverse groups of people. I’m currently a part of the UF ice hockey team and hope to lead them towards some championships!</Text>
+                </div>
             </div>
-        </div> -->
+
+            <script>
+                function myFunction2() {
+                    document.getElementById("bioDropdown").classList.toggle("show");
+                }
+
+                function myFunction3() {
+                    document.getElementById("bioDropdown2").classList.toggle("show");
+                }
+    
+                window.onclick = function(e) {
+                    if (!e.target.matches('.biobutton2')) {
+                        var myDropdown = document.getElementById("bioDropdown2");
+                        if (myDropdown.classList.contains('show')) {
+                            myDropdown.classList.remove('show');
+                        }
+                        else if (!e.target.matches('.biobutton')) {
+                        var myDropdown = document.getElementById("bioDropdown");
+                        if (myDropdown.classList.contains('show')) {
+                            myDropdown.classList.remove('show');
+                        }
+                    }
+                    }
+                }
+            </script>
+            
+        </div>
 
 
         <div class="icon-bar">

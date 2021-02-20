@@ -12,14 +12,16 @@
         <script type = "text/javascript" src = "app.js"></script>
 
         <div class="navbar">
-            <a href = "index.html"><img class = "logo"></a>            <div class="dropdown">
+            <a href = "index.html"><img class = "logo"></a>     
+            <a href = "portfolio.html">PORTFOLIO</a>        
+            <!-- <div class="dropdown">
                     <button class="dropbtn" onclick="myFunction()">PORTFOLIO</button>
                     <div class="dropdown-content" id="myDropdown">
                         <a href="index.html">VIDEO GAMES</a>
                         <a href="index.html">WEBSITES AND APPS</a>
                         <a href="index.html">COMPUTER SCIENCE</a>
                     </div>
-            </div>
+            </div> -->
             <a href = "about.html">ABOUT</a>
             <a href = "contact.html">CONTACT</a>
         </div>
@@ -41,39 +43,64 @@
         </script>
         
         <div class = "box">
-            <h2>Leave me a message</h2>      
-        </div>
-        
-        <form class = "form" action = "contactform.php" method = "post">
-                
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <h2>I'd love to hear from you</h2>      
+            <h1>SEND ME AN EMAIL!</h1>
 
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                    
-                    <label for = "email">Your Email</label>
-                    <input type="text" id="emailid" name="email" placeholder="Your email..">
+        <!-- START HERE -->
+   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link rel="stylesheet" href="style.css">
 
-                    <label for="country">Country</label>
-                    <select id="country" name="country">
-                        <option value="USA">USA</option>
-                        <option value="Australia">Australia</option>
-                        <option value="Canada">Canada</option>
-                        <option value = "Other">Other (Please List)</option>
-                      
-                    </select>
-                    
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+  action="https://script.google.com/macros/s/AKfycbyYbEaZmVaSVPJzuKC4hScnX_GD9YmmIvaOgO3hUpX0fQeEmQxG1MlUZw/exec">
+    <!-- change the form action to your script url -->
 
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <div class="form-elements">
+      <fieldset class="pure-group">
+        <input id="name" name="name" placeholder="Name" />
+      </fieldset>
 
-                    <button id = "submit" name = "submit">SEND EMAIL</button>
-                
-        </form>
+      <fieldset class="pure-group">
+        <textarea id="message" name="message" rows="10"
+        placeholder="Message"></textarea>
+      </fieldset>
 
-        <div class="icon-bar">
+      <fieldset class="pure-group">
+        <input id="email" name="email" type="email" value=""
+        required placeholder="your.name@email.com"/>
+      </fieldset>
+
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
+
+        <fieldset class="preventSpam">
+            <input id="honeypot" type="text" name="honeypot" value="" />
+          </fieldset>
+    </div>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2><em>Thanks! I will get back to you soon</em>
+    </div>
+
+  </form>
+
+  <div class="icon-bar">
+    <a href="Phillip%20Vanderlaat%20Resume.pdf"><img src="Resume.png"></a>
+</div>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" src="form-submission-handler.js"></script>
+<!-- END -->
+    
+       
+    
+
+        <!-- <div class="icon-bar">
             <a href="Phillip%20Vanderlaat%20Resume.pdf"><img src="Resume.png"></a>
-        </div>
+        </div> -->
+
     </body>
 </html>
