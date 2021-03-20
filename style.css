@@ -747,14 +747,26 @@ input[type=text], select, textarea{
 
 /* all for porfolio tiles on portfolio page*/
 .tile-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     float:left;
     position:relative;
     width:19.6vw;
-    height:19.6vw;    
+    height:19.6vw;
+}
+
+.tile-page2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float:left;
+    position:relative;
+    width:100%;
+    height:19.6vw;
 }
 
 .tile-inner {
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -775,6 +787,16 @@ input[type=text], select, textarea{
     border-radius:5%;
     height:auto;
     width:100%;
+}
+
+#clubfinity{
+    border-radius:5%;
+    height:200px;
+    margin-left: 11%;
+    margin-top: 0px;
+    padding-top: 0px;
+    border-bottom: 0px;
+    width:auto;
 }
 
 .tile-inner:hover img {
