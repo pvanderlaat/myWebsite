@@ -790,13 +790,8 @@ input[type=text], select, textarea{
 }
 
 #clubfinity{
-    border-radius:5%;
-    height:200px;
-    margin-left: 11%;
-    margin-top: 0px;
-    padding-top: 0px;
-    border-bottom: 0px;
-    width:auto;
+    width: 50%;
+    margin-left: 25%;
 }
 
 .tile-inner:hover img {
@@ -815,7 +810,7 @@ input[type=text], select, textarea{
     position: relative;
     left: 0;
     right: 0;
-    font-size:20px;
+    font-size:100%;
     text-decoration: none;
     color:#1b73c1;
     background: transparent;
@@ -837,6 +832,7 @@ input[type=text], select, textarea{
     color:black;
     background: yellow;
 }
+
 
 .tile-inner .textBox:hover {
     color:black;
@@ -897,4 +893,58 @@ input[type=text], select, textarea{
 
 .boxTest{
     background-color: white;
+}
+
+/* styling for project form*/
+
+.projectDisplay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: purple; */
+    padding: 2%;
+}
+
+.title{
+    /* background: #1b73c1; */
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    color: #1b73c1;
+}
+
+.main{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1b73c1;
+    border-radius: 15px;
+    width: 60%;
+}
+
+.main-title{
+    width: 70%;
+    text-align: center;
+}
+
+.main img{
+    width: 30%;
+}
+
+.links{
+    /* background: greenyellow; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.anchor{
+    color: white;
+    text-decoration: none;
+    font-size: 50%;
+}
+.anchor:hover{
+    color: #1b73c1;
 }

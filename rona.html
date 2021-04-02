@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> PV - Home</title>
+        <link rel="stylesheet" href="style.css" >
+    </head>
+
+    <body>
+        <div id = "particles-js"></div>
+        
+        <script type = "text/javascript" src = "particles.js"></script>
+        <script type = "text/javascript" src = "app.js"></script>
+
+        <div class="navbar">
+            <a href = "index.html"><img class = "logo"></a>
+            <a href = "portfolio.html">PORTFOLIO</a> 
+            <a href = "about.html">ABOUT</a>
+            <a href = "contact.html">CONTACT</a>
+        </div>
+
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+
+            window.onclick = function(e) {
+                if (!e.target.matches('.dropbtn')) {
+                    var myDropdown = document.getElementById("myDropdown");
+                    if (myDropdown.classList.contains('show')) {
+                        myDropdown.classList.remove('show');
+                    }
+                }
+            }
+        </script>
+
+        <div class="icon-bar">
+            <a href="Phillip%20Vanderlaat%20Resume.pdf"><img src="Resume.png"></a>
+        </div>
+
+        <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+    
+        <div class="projectDisplay">
+            <div class="title">
+                <h1>Rona Rampage</h1>
+            </div>
+            <img width="50%" src="rona.png">
+            <div class = "links">
+                <h10>Unity - C# - Photoshop</h10>
+            </div>
+            <div class = "main">
+                <div class="main-title">
+                    <h4>
+                        A 2D video game where the player controlls an alligator that tries to scare students into social distancing.
+                        Players get points for scaring and causing students to scatter.
+                    </h4>
+                    <br>
+                    <h4>
+                        I have mainly been focusing on the art for this project using Photoshop. 
+                        I am also working on the code aspect of the game which is introducing me to C#.
+                        The Unity game engine is the main tool we are using to make this game.
+                    </h4>
+                </div>
+                <br>
+            </div>
+        </div>
+    </body>
+</html>
