@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> PV - Home</title>
+        <link rel="stylesheet" href="style.css" >
+    </head>
+
+    <body>
+        <div id = "particles-js"></div>
+        
+        <script type = "text/javascript" src = "particles.js"></script>
+        <script type = "text/javascript" src = "app.js"></script>
+
+        <div class="navbar">
+            <a href = "index.html"><img class = "logo"></a>
+            <a href = "portfolio.html">PORTFOLIO</a> 
+            <a href = "about.html">ABOUT</a>
+            <a href = "contact.html">CONTACT</a>
+        </div>
+
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+
+            window.onclick = function(e) {
+                if (!e.target.matches('.dropbtn')) {
+                    var myDropdown = document.getElementById("myDropdown");
+                    if (myDropdown.classList.contains('show')) {
+                        myDropdown.classList.remove('show');
+                    }
+                }
+            }
+        </script>
+
+        <div class="icon-bar">
+            <a href="Phillip%20Vanderlaat%20Resume.pdf"><img src="Resume.png"></a>
+        </div>
+
+        <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+    
+        <div class="projectDisplay">
+            <div class="title">
+                <h1>Minesweeper Replica</h1>
+            </div>
+            <img src="minesweeper.png" width=50%></img>
+            <div class = "links">
+                <h10>C++ | SFML Library</h10>
+            </div>
+            <div class = "main">
+                <div class="main-title">
+                    <h4>
+                        This is a project I created for my programming 2 class where we had to integrate textures from the SFML library and create a replica of the classic game, Minesweeper.
+                        I had to create a copy of the desired UX/UI and I created all the logic for the game.
+                    </h4>
+                </div>
+                <br>
+            </div>
+            <br>
+            <!-- <div class="title">
+                <h1>Links for this project</h1>
+            </div>
+            <br>
+            <div class = "links">
+                <a class="anchor" href="https://github.com/pvanderlaat/Pac-Man-bot" target="blank">
+                <h1>
+                    Code for this project
+                </h1>
+                </a>
+            </div> -->
+        </div>
+    </body>
+</html>
