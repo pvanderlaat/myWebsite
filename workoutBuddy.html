@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> PV - Home</title>
+        <link rel="stylesheet" href="style.css" >
+    </head>
+
+    <body>
+        <div id = "particles-js"></div>
+        
+        <script type = "text/javascript" src = "particles.js"></script>
+        <script type = "text/javascript" src = "app.js"></script>
+
+        <div class="navbar">
+            <a href = "index.html"><img class = "logo"></a>
+            <a href = "portfolio.html">PORTFOLIO</a> 
+            <a href = "about.html">ABOUT</a>
+            <a href = "contact.html">CONTACT</a>
+        </div>
+
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+
+            window.onclick = function(e) {
+                if (!e.target.matches('.dropbtn')) {
+                    var myDropdown = document.getElementById("myDropdown");
+                    if (myDropdown.classList.contains('show')) {
+                        myDropdown.classList.remove('show');
+                    }
+                }
+            }
+        </script>
+
+        <div class="icon-bar">
+            <a href="Phillip%20Vanderlaat%20Resume.pdf"><img src="Resume.png"></a>
+        </div>
+
+        <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+    
+        <div class="projectDisplay">
+            <div class="title">
+                <h1>Workout Buddy</h1>
+            </div>
+            <img src="workoutBuddy.png" width=50%></img>
+            <div class = "links">
+                <h10> MERN STACK </h10>
+            </div>
+            <div class = "main">
+                <div class="main-title">
+                    <h4>
+                        This personal project of mine is a web app that helps me keep track of my workouts 
+                        and which workouts I should do to maximize my recovery/work times. 
+                        I basically created a MERN app completely from scratch. 
+                        For the backend, I created an API from scratch that allowed for GET, DELETE, POST, 
+                        and PATCH functionality. For the frontend, I used a REACT template to nicely display 
+                        this workout information.
+                    </h4>
+                </br>
+                    <h4>
+
+                        I deployed this project through AWS's EC2 service.
+
+                    </h4>
+                </div>
+                <br>
+            </div>
+            <br>
+            <div class="title">
+                <h1>Links for this project</h1>
+            </div>
+            <br>
+            <div class = "links">
+                <a class="anchor" href="http://3.67.67.236:3000/" target="blank">
+                    <h1>
+                        Link to the project itself 
+                    </h1>
+                    </a>
+                <a class="anchor" href="https://github.com/pvanderlaat/trainingBuddy" target="blank">
+                <h1>
+                    Link to the Github 
+                </h1>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

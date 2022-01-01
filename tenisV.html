@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> PV - Home</title>
+        <link rel="stylesheet" href="style.css" >
+    </head>
+
+    <body>
+        <div id = "particles-js"></div>
+        
+        <script type = "text/javascript" src = "particles.js"></script>
+        <script type = "text/javascript" src = "app.js"></script>
+
+        <div class="navbar">
+            <a href = "index.html"><img class = "logo"></a>
+            <a href = "portfolio.html">PORTFOLIO</a> 
+            <a href = "about.html">ABOUT</a>
+            <a href = "contact.html">CONTACT</a>
+        </div>
+
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+
+            window.onclick = function(e) {
+                if (!e.target.matches('.dropbtn')) {
+                    var myDropdown = document.getElementById("myDropdown");
+                    if (myDropdown.classList.contains('show')) {
+                        myDropdown.classList.remove('show');
+                    }
+                }
+            }
+        </script>
+
+        <div class="icon-bar">
+            <a href="Phillip%20Vanderlaat%20Resume.pdf"><img src="Resume.png"></a>
+        </div>
+
+        <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+    
+        <div class="projectDisplay">
+            <div class="title">
+                <h1>tenisVanderlaat.com</h1>
+            </div>
+            <img src="adtv.jpeg" width=50%></img>
+            <div class = "links">
+                <h10> HTML5 - CSS - JavaScript - AWS</h10>
+            </div>
+            <div class = "main">
+                <div class="main-title">
+                    <h4>
+                        This is a basic website I made for my grandparents tennis academy in Costa Rica.
+                    </h4>
+                </div>
+                <br>
+            </div>
+            <br>
+            <div class="title">
+                <h1>Links for this project</h1>
+            </div>
+            <br>
+            <div class = "links">
+                <a class="anchor" href="https://tenisvanderlaat.com/" target="blank">
+                    <h1>
+                        Link to the website
+                    </h1>
+                    </a>
+                <a class="anchor" href="https://github.com/pvanderlaat/tenisVanderlaat" target="blank">
+                <h1>
+                    Link to the Github
+                </h1>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
