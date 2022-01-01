@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> PV - Home</title>
+        <link rel="stylesheet" href="style.css" >
+    </head>
+
+    <body>
+        <div id = "particles-js"></div>
+        
+        <script type = "text/javascript" src = "particles.js"></script>
+        <script type = "text/javascript" src = "app.js"></script>
+
+        <div class="navbar">
+            <a href = "index.html"><img class = "logo"></a>
+            <a href = "portfolio.html">PORTFOLIO</a> 
+            <a href = "about.html">ABOUT</a>
+            <a href = "contact.html">CONTACT</a>
+        </div>
+
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+
+            window.onclick = function(e) {
+                if (!e.target.matches('.dropbtn')) {
+                    var myDropdown = document.getElementById("myDropdown");
+                    if (myDropdown.classList.contains('show')) {
+                        myDropdown.classList.remove('show');
+                    }
+                }
+            }
+        </script>
+
+        <div class="icon-bar">
+            <a href="Phillip%20Vanderlaat%20Resume.pdf"><img src="Resume.png"></a>
+        </div>
+
+        <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+    
+        <div class="projectDisplay">
+            <div class="title">
+                <h1>Spotify Song Linker</h1>
+            </div>
+            <video src="Project3_Spotify_Song_Linker.mp4" controls style="width: 75%;"></video>
+            <div class = "links">
+                <h10>Python | Spotify API</h10>
+            </div>
+            <div class = "main">
+                <div class="main-title">
+                    <h4>
+                        This is a project I created for my Data Structures and Algorithms class where we had to use an 
+                        existing dataset of at least 10,000 data points, store them in a graph, and traverse the graph using
+                        different algorithms. My team and I used Spotify's API to gather our data points. My role in the project
+                        was to set up the Spotify API code and hook it up to the graph creation process. I also played a major part
+                        in implementing the dijkstra's algorithm part.
+                    </h4>
+                </div>
+                <br>
+            </div>
+            <br>
+            <div class="title">
+                <h1>Links for this project</h1>
+            </div>
+            <br>
+            <div class = "links">
+                <a class="anchor" href="https://github.com/IshaYoo/Project3COP3530" target="blank">
+                <h1>
+                    Code for this project
+                </h1>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
