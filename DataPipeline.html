@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> PV - Home</title>
+        <link rel="stylesheet" href="style.css" >
+    </head>
+
+    <body>
+        <div id = "particles-js"></div>
+        
+        <script type = "text/javascript" src = "particles.js"></script>
+        <script type = "text/javascript" src = "app.js"></script>
+
+        <div class="navbar">
+            <a href = "index.html"><img class = "logo"></a>
+            <a href = "portfolio.html">PORTFOLIO</a> 
+            <a href = "about.html">ABOUT</a>
+        </div>
+
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+
+            window.onclick = function(e) {
+                if (!e.target.matches('.dropbtn')) {
+                    var myDropdown = document.getElementById("myDropdown");
+                    if (myDropdown.classList.contains('show')) {
+                        myDropdown.classList.remove('show');
+                    }
+                }
+            }
+        </script>
+
+        <div class="icon-bar">
+            <a href="Phillip%20Vanderlaat%20Resume.pdf"><img src="Resume.png"></a>
+        </div>
+
+        <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+    
+        <div class="projectDisplay">
+            <div class="title">
+                <h1>Google Project: Data Pipeline</h1>
+            </div>
+            <div class="rando-image-holder">
+                <img src="MapReduce.png">
+                <img src="google.webp">
+                <img src="clustertool.png">
+            </div>
+            <br/>
+            <br/>
+            <div class = "links">
+                <h10>C++ - SQL - MapReduce - Cluster Management Tools - System Design</h10>
+            </div>
+            <div class = "main">
+                <div class="main-title">
+                    <h4>
+                        This was the main project I worked on during my internship with Google in the summer of 2022. 
+                        It is a big data pipeline that periodically backfills information in YouTube TV's rewards system. It reads through a data dump of subscribers,
+                         detects missing rewards, and grants those missing rewards.
+                    </h4>
+                    <br>
+                    <h4>New Skills:
+                    </h4>
+                    <h4>I Learned how to manage big data using MapReduce technology. I also learned how to write an original design document for a backend system and screen it across multiple teams.
+                    </h4>
+                    <br>
+
+                    <h4>Sharpened Skills:
+                    </h4>
+                    <h4>I underwent code reviews from many googlers across two different teams. This helped me pick up many good programming practices, specifically in C++. I also Gained new experiences with cluster management technology. I had used Kubernetes to manage multiple services before, but my time at Google gave me experience with other similar technologies. Lastly, I used SQL to help identify target data within Google's databases and create testing input for the pipeline.
+                    </h4>
+                </div>
+                <br>
+            </div>
+            <br>
+            </div>
+        </div>
+    </body>
+</html>
