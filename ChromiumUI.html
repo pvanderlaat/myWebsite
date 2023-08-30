@@ -41,34 +41,42 @@
     
         <div class="projectDisplay">
             <div class="title">
-                <h1>Google Project: Data Pipeline</h1>
+                <h1>Google Project: ChromeOS UI Features</h1>
             </div>
             <div class="rando-image-holder">
-                <img src="MapReduce.png">
-                <img src="clustertool.png">
+                <img src="Chromium_Logo.svg" style="width: 15%;">
+                <img src="chromiumUI.jpeg">
             </div>
             <br/>
             <br/>
             <div class = "links">
-                <h10>C++ - SQL - MapReduce - Cluster Management Tools - System Design</h10>
+                <h10>C++ - Linux</h10>
             </div>
             <div class = "main">
                 <div class="main-title">
                     <h4>
-                        This was the main project I worked on during my internship with Google in the summer of 2022. 
-                        It is a big data pipeline that periodically backfills information in YouTube TV's rewards system. It reads through a data dump of subscribers,
-                         detects missing rewards, and grants those missing rewards.
+                        During my second internship with Google, during the summer of 2023, I worked on the fronted for ChromeOS. 
+                        Specifically, I made UI upgrades to ChromeOS' Overview Mode. Because ChromeOS is open source, I can share
+                        some code pointers below. Note that I uploaded about 25 code changes that summer, but I am only sharing
+                        3 of them here to provide just the highlights.
                     </h4>
                     <br>
-                    <h4>New Skills:
-                    </h4>
-                    <h4>I Learned how to manage big data using MapReduce technology. I also learned how to write an original design document for a backend system and screen it across multiple teams.
+                    <h4>
+                        I improved the performance and UX of ChromeOS Overview mode, with an 8% increase in
+                        smoothness and 193 ms decrease in latency ms, by implementing a new window placement layout
+                        algorithm for ChromeOS Lab.
+                        <a href="https://chromium-review.googlesource.com/c/chromium/src/+/4574788" target="blank">See here for a code snippet</a>
                     </h4>
                     <br>
-
-                    <h4>Sharpened Skills:
+                    <h4>
+                        Designed and implemented a ChromeOS Lab feature that improves the feel and discoverability of
+                        Overview mode by adding a smoother entry animation that is more responsive to trackpad events.
+                        <a href="https://chromium-review.googlesource.com/c/chromium/src/+/4711219" target="blank">See here for a code snippet</a>
                     </h4>
-                    <h4>I underwent code reviews from many googlers across two different teams. This helped me pick up many good programming practices, specifically in C++. I also Gained new experiences with cluster management technology. I had used Kubernetes to manage multiple services before, but my time at Google gave me experience with other similar technologies. Lastly, I used SQL to help identify target data within Google's databases and create testing input for the pipeline.
+                    <br>
+                    <h4>
+                        Launched an internal developer tool to simulate trackpad events in a virtual environment.
+                        <a href="https://chromium-review.googlesource.com/c/chromium/src/+/4598395" target="blank">See here for a code snippet</a>
                     </h4>
                 </div>
                 <br>
